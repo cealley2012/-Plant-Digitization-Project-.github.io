@@ -24,3 +24,9 @@ https://docs.google.com/presentation/d/1nAT_hqp6Nm3DC7_e7dxPvbbaXLJTOYzcXJ5dSW2n
 [Jacob Motley](https://www.linkedin.com/in/jacob-motley-b627a1152) - BS [Computer Science](https://github.com/j-h-m): Software Systems - UTC.
 
 [Caleb Powell](https://github.com/CapPow) - BS Environmental Science, Graduate Student - UTC.
+
+
+{%for pages in site.pages%}
+<li><a href="{{page.url}}">{{page.title}}</a></li>
+
+{%end for%}
