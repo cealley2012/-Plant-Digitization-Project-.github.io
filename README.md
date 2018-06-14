@@ -26,7 +26,15 @@ https://docs.google.com/presentation/d/1nAT_hqp6Nm3DC7_e7dxPvbbaXLJTOYzcXJ5dSW2n
 [Caleb Powell](https://github.com/CapPow) - BS Environmental Science, Graduate Student - UTC.
 
 
-{%for pages in site.pages%}
-<li><a href="{{page.url}}">{{page.title}}</a></li>
+docs_list_title: ACME Documentation
+docs:
 
-{%end for%}
+- title: Tutorials
+  url:Tutorials.md
+  
+  <h2>{{ site.data.samplelist.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.samplelist.docs %}
+      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
