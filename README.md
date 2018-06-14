@@ -32,9 +32,9 @@ docs:
 - title: Tutorials
   url:Tutorials.md
   
-  <h2>{{ site.data.samplelist.docs_list_title }}</h2>
+  <h2>{{ site.data.tutorials.docs_list_title }}</h2>
 <ul>
-   {% for item in site.data.samplelist.docs %}
+   {% for item in site.data.tutorials.docs %}
       <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
    {% endfor %}
 </ul>
